@@ -19,4 +19,12 @@
         <color name="icons">#212121</color>
         <color name="divider">#BDBDBD</color>
 
+    <!--color for change the color app-->
+    <color name="red_color">#FF0000</color>
+    <color name="red_color2">#f44336</color>
+    <color name="green_color">#00FF00</color>
+    <color name="green_color2">#8bc34a</color>
+    <color name="blue_color">#0000FF</color>
+    <color name="blue_color2">#2196f3</color>
+
 </resources>

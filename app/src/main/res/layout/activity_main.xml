@@ -1,353 +1,411 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_vertical"
     android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
     tools:context="com.example.android.footballmatch.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
         android:layout_gravity="center"
+        android:layout_weight="12"
         android:gravity="center"
         android:orientation="horizontal">
-<LinearLayout
-    android:layout_width="0dp"
-    android:layout_weight="1"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Team A"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="@color/primary_text"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:text="goal"
-            android:textColor="@color/primary_text"
-            android:onClick="goal1"/>
-
-        <TextView
-            android:id="@+id/goalT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="0"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/secondary_text" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:onClick="foul1"
-            android:text="foul"
-            android:textColor="@color/primary_text" />
-
-        <TextView
-            android:id="@+id/foulT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="0"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/secondary_text" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:onClick="yellow1"
-            android:text="yellow"
-            android:textColor="@color/primary_text" />
-
-        <TextView
-            android:id="@+id/yellowT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="0"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/secondary_text" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:onClick="red1"
-            android:text="Red"
-            android:textColor="@color/primary_text" />
-
-        <TextView
-            android:id="@+id/redT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:gravity="center"
-            android:text="0"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/secondary_text" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/primary"
-            android:onClick="offside1"
-            android:text="Offside"
-            android:textColor="@color/primary_text" />
-
-        <TextView
-            android:id="@+id/offsideT1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="0"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/secondary_text" />
-    </LinearLayout>
-</LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="21dp"
-            android:layout_marginTop="10dp" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/goal" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/game" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/football_warning_card_in_a_referee_hand" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/football_red_card_in_a_hand" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="10dp"
-            android:src="@mipmap/football_referee_with_hand_gestures" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layoutDirection="rtl"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Team B"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="@color/primary_text"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:onClick="goal2"
-                android:text="goal"
-                android:textColor="@color/primary_text" />
-
-            <TextView
-                android:id="@+id/goalT2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="0"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/secondary_text" />
-        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:onClick="foul2"
-                android:text="foul"
-                android:textColor="@color/primary_text" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/foulT2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="0"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/secondary_text" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:onClick="yellow2"
-                android:text="yellow"
-                android:textColor="@color/primary_text" />
-
-            <TextView
-                android:id="@+id/yellow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="0"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/secondary_text" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:onClick="red2"
-                android:text="Red"
-                android:textColor="@color/primary_text" />
-
-            <TextView
-                android:id="@+id/redT2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="0"
+                android:text="Team A"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/secondary_text" />
+                android:textColor="@color/primary_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buGoal1"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goal1"
+                    android:text="goal"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/goalT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buFoul1"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="foul1"
+                    android:text="foul"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/foulT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buYellow1"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="yellow1"
+                    android:text="yellow"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/yellowT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buRed1"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="red1"
+                    android:text="Red"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/redT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buOffside1"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="offside1"
+                    android:text="Offside"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/offsideT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp">
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/primary"
-                android:onClick="offside2"
-                android:text="Offside"
-                android:textColor="@color/primary_text" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/goal" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/game" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/football_warning_card_in_a_referee_hand" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/football_red_card_in_a_hand" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/football_referee_with_hand_gestures" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/offsideT2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Team B"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/primary_text" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
-                android:gravity="center"
-                android:text="0"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/secondary_text" />
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buGoal2"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goal2"
+                    android:text="goal"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/goalT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buFoul2"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="foul2"
+                    android:text="foul"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/foulT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buYellow2"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="yellow2"
+                    android:text="yellow"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/yellow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buRed2"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="red2"
+                    android:text="Red"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/redT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buOffside2"
+                    style="@style/AppTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="offside2"
+                    android:text="Offside"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/offsideT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/secondary_text" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
     </LinearLayout>
 
     <Button
+        android:id="@+id/buRest1"
+        style="@style/AppTheme"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:onClick="rest"
         android:text="rest"
-        android:textColor="@color/primary_text"
-        android:background="@color/primary"
-        android:onClick="rest"/>
+        android:textColor="@color/primary_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buRedcolor"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red_color"
+            android:onClick="red_color" />
+
+        <Button
+            android:id="@+id/buBluecolor"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/blue_color"
+            android:onClick="blue_color" />
+
+        <Button
+            android:id="@+id/buGreencolor"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/green_color"
+            android:onClick="green_color" />
+    </LinearLayout>
 
 
 </LinearLayout>
